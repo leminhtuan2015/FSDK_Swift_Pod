@@ -74,6 +74,7 @@ class LoginViewController: BasicViewController {
                     Toast.show(context: self.view, text: Constant.LOGIN_SUCCESS)
                     
                     goBack()
+                    navigationController?.dismiss(animated: true, completion: nil)
                     
                 } else {
                     Toast.show(context: self.view, text: Constant.LOGIN_FAIL)

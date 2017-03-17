@@ -2,15 +2,14 @@
   "name": "FujiSDK",
   "version": "1.0.0",
   "summary": "Sort description of 'FujiSDK' framework",
-  "homepage": "http://www.yudiz.com",
+  "homepage": "https://fujigame.net/",
   "license": "MIT",
-  "authors": "AKanjariya",
+  "authors": "Nick D., Tuan L.",
   "platforms": {
     "ios": "10.0"
   },
   "source": {
-    "git": "URL",
-    "tag": "1.0.0"
+    "git": "nami-net@nami-net.git.backlog.jp:/FJ_GAME_PF/fuji_sdk_swift.git"
   },
   "source_files": [
     "FujiSDK",

@@ -10,67 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="BYZ-38-t0r" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gc4-tT-zyX">
-                                <rect key="frame" x="141" y="72" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <action selector="buttonLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Jv-rV-GgY"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLw-36-H7R">
-                                <rect key="frame" x="136" y="135" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Logout"/>
-                                <connections>
-                                    <action selector="buttonLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6I-2I-b0m"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vdg-B4-Cpd">
-                                <rect key="frame" x="129" y="188" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="User Info"/>
-                                <connections>
-                                    <action selector="buttonUserInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a8t-pW-8F4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtY-9n-3fM">
-                                <rect key="frame" x="119" y="245" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tranfer Coin"/>
-                                <connections>
-                                    <action selector="buttonTranferCoin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SLp-a0-Nl8"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="qJa-oC-QDH"/>
-                    <connections>
-                        <outlet property="buttonLogin" destination="gc4-tT-zyX" id="Qe2-8Z-xJw"/>
-                        <outlet property="buttonLogout" destination="xLw-36-H7R" id="reC-34-yfa"/>
-                        <outlet property="buttonTranferCoin" destination="QtY-9n-3fM" id="2N8-hA-YAg"/>
-                        <segue destination="dCK-tT-pc7" kind="show" identifier="login" id="Win-Bq-mJt"/>
-                        <segue destination="z4H-lP-wey" kind="show" identifier="UserInfo" id="G0W-Jt-wSP"/>
-                        <segue destination="exP-Zc-u6u" kind="show" identifier="TranferCoin" id="qZV-dG-js7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1569.375" y="85.563380281690144"/>
-        </scene>
         <!--LoginViewController-->
         <scene sceneID="P7m-aJ-U5m">
             <objects>
@@ -179,7 +118,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="nxu-0u-hTG" secondAttribute="trailing" constant="105" id="rEl-A5-5pM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="0Ot-cN-YOz">
+                    <navigationItem key="navigationItem" title="Đăng nhập" id="0Ot-cN-YOz">
                         <barButtonItem key="backBarButtonItem" title="Back" id="1Ln-We-Whs"/>
                     </navigationItem>
                     <connections>
@@ -192,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="poS-3H-NT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2426" y="-323"/>
+            <point key="canvasLocation" x="2143" y="-362"/>
         </scene>
         <!--SignupViewControler-->
         <scene sceneID="3sL-BV-g2H">
@@ -393,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oWH-dC-dLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2512.5" y="505.98591549295776"/>
+            <point key="canvasLocation" x="2237" y="505"/>
         </scene>
         <!--Telephone Card-->
         <scene sceneID="ovr-H3-CU0">
@@ -1055,7 +994,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RFM-1L-0S7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fnd-1f-mf4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RootNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="Fnd-1f-mf4" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="d8d-xp-lGb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1063,12 +1002,14 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wzh-fC-tp2"/>
+                        <segue destination="dCK-tT-pc7" kind="show" action="showDetailViewController:sender:" id="pXH-rY-H2E"/>
+                        <segue destination="exP-Zc-u6u" kind="show" action="showDetailViewController:sender:" id="WYR-rC-KxZ"/>
+                        <segue destination="z4H-lP-wey" kind="show" action="showDetailViewController:sender:" id="3Si-T9-212"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoo-Gs-ILh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708.75" y="85.563380281690144"/>
+            <point key="canvasLocation" x="1279" y="92"/>
         </scene>
     </scenes>
 </document>

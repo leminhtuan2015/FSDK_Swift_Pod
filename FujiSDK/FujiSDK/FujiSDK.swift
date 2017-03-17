@@ -13,6 +13,7 @@ public class FujiSDK {
     public static var PRODUCT_CODE: String = ""
     private var isDebugMode = false
     private var fujiStoryboard: UIStoryboard = UIStoryboard()
+    private var nav: UINavigationController? = nil
     
     public class var Instance: FujiSDK {
         struct Static {
@@ -75,10 +76,13 @@ public class FujiSDK {
         if viewController.navigationController != nil {
             viewController.navigationController?.pushViewController(loginViewController, animated: true)
         } else {
-            let navController = UINavigationController(rootViewController: loginViewController)
-            viewController.present(navController, animated: true, completion: nil)
+//            UIApplication.shared.keyWindow?.rootViewController = nil
+//            let navController = UINavigationController(rootViewController: viewController)
+//            UIApplication.shared.keyWindow?.rootViewController = navController
+//            navController.pushViewController(loginViewController, animated: true)
+            
+            renderBackButton(previousVC: viewController, nextVC: loginViewController)
         }
-        
     }
     
     public func logout(viewController: UIViewController, callback: @escaping (_ isSuccess: Bool, _ message: String) -> Void){
@@ -107,7 +111,6 @@ public class FujiSDK {
                 
                 User.logout(callback: callback)
             }
-            
         }
         
         Alert.confirm(viewController: viewController, message: Constant.LOGOUT_CONFIRM, callback: callbackConfirm)
@@ -125,8 +128,10 @@ public class FujiSDK {
         if viewController.navigationController != nil {
             viewController.navigationController?.pushViewController(userInfoViewController, animated: true)
         } else {
-            let navController = UINavigationController(rootViewController: userInfoViewController)
-            viewController.present(navController, animated: true, completion: nil)
+//            let navController = UINavigationController(rootViewController: userInfoViewController)
+//            viewController.present(navController, animated: true, completion: nil)
+            
+            renderBackButton(previousVC: viewController, nextVC: userInfoViewController)
         }
     }
 
@@ -145,9 +150,33 @@ public class FujiSDK {
         if viewController.navigationController != nil {
             viewController.navigationController?.pushViewController(paymentViewController, animated: true)
         } else {
-            let navController = UINavigationController(rootViewController: paymentViewController)
-            viewController.present(navController, animated: true, completion: nil)
+//            let navController = UINavigationController(rootViewController: paymentViewController)
+//            viewController.present(navController, animated: true, completion: nil)
+            
+            renderBackButton(previousVC: viewController, nextVC: paymentViewController)
         }
+    }
+    
+    private func renderBackButton(previousVC: UIViewController, nextVC: UIViewController){
+        let navController = UINavigationController(rootViewController: nextVC)
+        nav = navController
+        
+        var back = UIBarButtonItem(
+            title: "Back",
+            style: .plain,
+            target: self,
+            action: #selector(clickedOnBackButton(sender:))
+        )
+        
+        nextVC.navigationItem.leftBarButtonItem = back
+        
+        previousVC.present(navController, animated: true, completion: nil)
+    }
+    
+    @objc private func clickedOnBackButton(sender: UIBarButtonItem) {
+        Logger.log(string: "Okie")
+        
+        nav?.dismiss(animated: true, completion: nil)
     }
 }
 
