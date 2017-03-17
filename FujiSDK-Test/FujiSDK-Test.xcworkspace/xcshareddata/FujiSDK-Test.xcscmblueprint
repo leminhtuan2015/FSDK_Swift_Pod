@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0A1AC7743E197615E971ABE91BF81148616AB53E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0A1AC7743E197615E971ABE91BF81148616AB53E" : 9223372036854775807,
+    "0C2645282CF3FA226FF7EDD44F35829D997FDBDE" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B1076DC6-0407-44BB-95C5-DB2B92201183",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0A1AC7743E197615E971ABE91BF81148616AB53E" : "FujiSDK-Test\/",
+    "0C2645282CF3FA226FF7EDD44F35829D997FDBDE" : "FujiSDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FujiSDK-Test",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FujiSDK-Test.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "nami-net.git.backlog.jp:\/FJ_GAME_PF\/fuji_sdk_swift_test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0A1AC7743E197615E971ABE91BF81148616AB53E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "nami-net.git.backlog.jp:\/FJ_GAME_PF\/fuji_sdk_swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C2645282CF3FA226FF7EDD44F35829D997FDBDE"
+    }
+  ]
+}
